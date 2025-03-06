@@ -1,3 +1,7 @@
+/* Main running class designed to provide a user a looping option
+   to submit student information as defined by the Student class,
+   which is stored and exported as soon as the user is done.
+ */
 import java.util.*;
 import java.io.FileWriter;
 
@@ -44,6 +48,7 @@ public class Main {
             }
             studentEntry.add(new Student(studentName, studentAddress, studentGPA));
         }
+
         // Sort and write
         studentEntry.sort(new NameSort());
         try (FileWriter writer = new FileWriter("src/Student_Information.txt", true)) {

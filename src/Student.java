@@ -1,3 +1,7 @@
+/* The Student class signifies the primary object being utilized for
+   the process of saving student data and exporting it through the
+   main class.
+ */
 public class Student {
     private String name;
     private String address;
